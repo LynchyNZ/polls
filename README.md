@@ -1,9 +1,6 @@
-# pollsWelcome!
-
-First off, welcome to my Polls website. My name is Daniel Lynch and this is my Assignment 2 project for SENG365.
+# Welcome!
 
 This site was built using AngularJS (front-end), CodeIgnitor(back-end), and Bootstrap (styling).
-
 Date completed: 26/05/2016
 
 
