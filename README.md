@@ -1,4 +1,4 @@
-# Welcome!
+# About
 
 This site was built using AngularJS (front-end), CodeIgnitor(back-end), and Bootstrap (styling).
 Date completed: 26/05/2016
