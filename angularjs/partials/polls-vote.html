@@ -1,0 +1,32 @@
+<div class="content-group">
+  <h1>{{poll.title}}</h1>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="pill" href=".">Polls</a></li>
+    <li><a data-toggle="pill" href="./#/about">About</a></li>
+    <li><a data-toggle="pill" href="./#/polladmin">Admin</a></li>
+  </ul>
+  <ol class="breadcrumb">
+    <li class="active">Poll ID: {{poll.id}}</li>  
+  </ol>
+  <br>
+    <h3 class="margin">{{ poll.question }}</h3>  
+    <br><br>
+    <div class="row">
+        <div class="col-sm-10">
+            <form name="myForm" ng-submit="submitVote()">
+                <li ng-repeat="answer in poll.answers">
+                    <button type="button" class="btn btn-default btn-block" style="text-align:left">
+                    <label class="content control--radio">{{answer}}
+                    <input type="radio" name="{{poll.id}}" ng-model="voteId.id" value="{{$index}}" />
+                    <div class="content__indicator"></div>
+                    </label></button><br>
+                </li><br>
+                <button type="submit" class="btn btn-primary margin">Vote!</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <div class="bg-success"><h5>{{result}}</h5></div>
+    <br>
+</div

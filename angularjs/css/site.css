@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #e6e6e6;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.margin {
+  margin-left:30px;
+}
+li {
+  display: block;
+  position: relative;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+li {
+  display: block;
+  position: relative;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.content-group {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  padding: 30px;
+  padding-right: 30px;
+  width: 90%;
+  height: 90%;
+  margin: 10px;
+}
+.content {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.content input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.content__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.content--radio .content__indicator {
+  border-radius: 50%;
+}
+.content:hover input ~ .content__indicator,
+.content input:focus ~ .content__indicator {
+  background: #ccc;
+}
+.content input:checked ~ .content__indicator {
+  background: #2aa1c0;
+}
+.content:hover input:not([disabled]):checked ~ .content__indicator,
+.content input:checked:focus ~ .content__indicator {
+  background: #0e647d;
+}
+.content input:disabled ~ .content__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.content__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.content input:checked ~ .content__indicator:after {
+  display: block;
+}
+.content--checkbox .content__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.content--checkbox input:disabled ~ .content__indicator:after {
+  border-color: #fff;
+}
+.content--radio .content__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+.content--radio input:disabled ~ .content__indicator:after {
+  background: #fff;
+}
