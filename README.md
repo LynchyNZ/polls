@@ -1,8 +1,6 @@
 # About
 
-This site was built using AngularJS (front-end), CodeIgnitor(back-end), and Bootstrap (styling).
-Date completed: 26/05/2016
-
+This site was built using AngularJS (frontend), CodeIgnitor(backend), and Bootstrap (styling)
 
 Details
 
@@ -47,6 +45,4 @@ The framework uses a responsive deesign, meaning the content will resize based o
 For example, go to the admin page and view some votes for a poll, then reduce the width by resizing your window; you'll notice that the content on the right hand side will gets pushed under the left-side's content (as the width of the screen would make the content too small, without using horizontal scrolling).
 
 I also used Bootstrap's Buttons, Tabs and Panels, along with some Glyphicons (for buttons on admin page).
-
-I'd like to give credit to W3Schools.com's Bootstrap tutorial and code examples which helped me design the site.
 
